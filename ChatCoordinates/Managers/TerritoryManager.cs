@@ -48,7 +48,7 @@ namespace ChatCoordinates.Managers
                 }).ToList();
         }
 
-        public TerritoryDetail? GetByTerritoryType(ushort territoryType)
+        public TerritoryDetail? GetByTerritoryType(uint territoryType)
         {
             return _territoryDetails.FirstOrDefault(x => x.TerritoryType == territoryType);
         }
